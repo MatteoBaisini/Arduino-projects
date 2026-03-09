@@ -1,14 +1,4 @@
 /*
-  Arduino Uno R4 WiFi: Web Server per Matrice LED 8x12
-
-  Questo sketch trasforma l'Arduino Uno R4 WiFi in un punto di accesso (AP)
-  Wi-Fi e avvia un server web sulla porta 80. La pagina web fornita permette
-  di accendere e spegnere individualmente ogni singolo LED di una matrice 8x12.
-
-  Ogni click su un "LED" nella pagina web invierà una richiesta HTTP al server
-  Arduino, che aggiornerà lo stato del LED corrispondente nella memoria e lo
-  renderizzerà sulla matrice (se connessa).
-
   Istruzioni:
   1.  Modifica SSID e PASSWORD qui sotto.
   2.  Carica lo sketch sull'Arduino Uno R4 WiFi.
@@ -22,8 +12,8 @@
 #include "Arduino_LED_Matrix.h" // Assicurati di avere questa libreria installata
 
 // Configurazione del punto di accesso (AP) WiFi
-char ssid[] = "arduino_wifi";         // nome della tua rete SSID (nome), deve essere di almeno 8 caratteri
-char pass[] = "matteobello";         // password della tua rete (usa per WPA, o usa come chiave per WEP)
+char ssid[] = "SSID";         // nome della tua rete SSID (nome), deve essere di almeno 8 caratteri
+char pass[] = "PASSWORD";         // password della tua rete (usa per WPA, o usa come chiave per WEP)
                                   // deve essere di almeno 8 caratteri 
 int keyIndex = 0;                 // numero indice della tua chiave di rete (necessario solo per WEP)
 
